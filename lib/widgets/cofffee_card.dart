@@ -92,7 +92,7 @@ class CoffeeCard extends StatelessWidget {
                   ),
                 ),
                 // Delete
-                Positioned(
+               (usersC.user == 'admin') ? Positioned(
                   right: 0,
                   child: GestureDetector(
                     onTap: () {
@@ -125,7 +125,7 @@ class CoffeeCard extends StatelessWidget {
                       ),
                     ),
                   ),
-                ),
+                ) : SizedBox(),
               ],
             ),
             SizedBox(height: 8),
